@@ -1,4 +1,4 @@
-# OwnCloud on Docker on a Respberry Pi
+# OwnCloud on Docker on a Respberry Pi (SQLite only)
 
 This project makes it possible to run OwnCloud on Docker on a Respberry Pi!
 
