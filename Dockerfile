@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:latest
 MAINTAINER Axel Amigo "contacto@amigoarnold.me"
 #RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
 
-RUN apt-get -y update 
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 
 RUN dpkg-divert --local --rename --add /sbin/initctl
 #RUN ln -s /bin/true /sbin/initctl
